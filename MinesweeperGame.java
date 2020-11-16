@@ -16,7 +16,7 @@ public class MinesweeperGame extends Game {
     private int score;
     private boolean isGameNext;
     private int level=1;
-    //-------------------------------------------------------------
+    //------------------------------------------------------------
 
 
     @Override
@@ -106,10 +106,8 @@ public class MinesweeperGame extends Game {
 
             }
         }
-            if (countClosedTiles==countMinesOnField){
-                win();
-            }
-            else if (!gameObject.isMine && gameObject.countMineNeighbors != 0) {
+
+         if (!gameObject.isMine && gameObject.countMineNeighbors != 0) {
                 gameObject.isOpen = true;
                 score=score+5;
                 countClosedTiles--;
