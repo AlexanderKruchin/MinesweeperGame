@@ -16,7 +16,7 @@ public class MinesweeperGame extends Game {
     private int score;
     private boolean isGameNext;
     private int level=1;
-    //------------------------------------------------------------
+    //--------------------------------------------------
 
 
     @Override
